@@ -18,11 +18,11 @@ public:
     int climbStairs1(int n){
         vector<int> dp(n+1);
         if(n<=2)    return n;
-        a[1] = 1, a[2] = 2;
+        dp[1] = 1, dp[2] = 2;
         for(int i=1;i<=n;i++){
-            a[i] = a[i-1] + a[i-2];
+            dp[i] = dp[i-1] + dp[i-2];
         }
-        return a[n];
+        return dp[n];
     }
 // 2. 常数级dp
     int climbStairs2(int n){
