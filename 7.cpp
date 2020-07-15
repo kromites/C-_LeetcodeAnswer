@@ -11,6 +11,7 @@
 #include <iostream>
 
 using namespace std;
+
 class Solution{
 public:
     int reverse(int x){
@@ -34,6 +35,6 @@ int main(){
     while(cin>>x){
         cout << solution.reverse(x) << endl;
     }
-    system("puase");
+    system("pause");
     return 0;
 }
